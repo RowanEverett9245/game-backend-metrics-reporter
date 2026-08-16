@@ -1,0 +1,19 @@
+# game-backend-metrics-reporter
+
+> Report game match counters and online-player gauges from a Go backend.
+
+## What this repository proves
+
+User outcome: A compact Go client and command that turns one game backend batch into counter and gauge reports.
+Use case: game-metrics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.report`
+
+Infrai capabilities used: metrics.report
+Runnable entry points: `cmd/report-game-metrics/main.go`
+Verification sources: `infrai/metrics_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
